@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hci_isvs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hci.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hci.activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hci.activities.GlavniMeniActivity"
+            android:label="@string/title_activity_novi" >
+        </activity>
+
+        <service
+            android:name="com.hci.background.MojPorukaServis"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.hci.activities.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.MojProfilActivity"
+            android:label="@string/title_activity_moj_profil" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.LijekoviActivity"
+            android:label="@string/title_activity_lijekovi" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.DodavanjeLijekovaActivity"
+            android:label="@string/title_activity_dodavanje_lijekova" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.PregledLijekovaActivity"
+            android:label="@string/title_activity_pregled_lijekova" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.DijagnozeActivity"
+            android:label="@string/title_activity_dijagnoze" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.DodavanjeDijagnozaActivity"
+            android:label="@string/title_activity_dodavanje_dijagnoza" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.PregledDijagnozaActivity"
+            android:label="@string/title_activity_pregled_dijagnoza" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.PreglediActivity"
+            android:label="@string/title_activity_pregledi" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.DodavanjePregledaActivity"
+            android:label="@string/title_activity_dodavanja_pregleda" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.PregledPregledaActivity"
+            android:label="@string/title_activity_pregled_pregleda" >
+        </activity>
+        <activity
+            android:name="com.hci.activities.GlavniMeniActivity"
+            android:label="@string/title_activity_glavni_meni" >
+        </activity>
+        <activity
+            android:name="com.example.hci_isvs.GlavniMeniActivity"
+            android:label="@string/title_activity_glavni_meni" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlueAngel"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hci_isvs.PreglediActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/txtPreglediControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtPreglediControl"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPovratak3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_shape_selector"
+        android:onClick="btnPovratak3onClick"
+        android:text="@string/btnPovratak3" />
+
+    <Button
+        android:id="@+id/btnPregledajPregled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDodajPregled"
+        android:layout_alignRight="@+id/btnDodajPregled"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_shape_selector"
+        android:onClick="btnPregledajPregledonClick"
+        android:text="@string/btnPregledajPregled" />
+
+    <Button
+        android:id="@+id/btnDodajPregled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnPregledajPregled"
+        android:layout_alignLeft="@+id/btnPovratak3"
+        android:layout_alignRight="@+id/btnPovratak3"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_shape_selector"
+        android:onClick="btnDodajPregledonClick"
+        android:text="@string/btnDodajPregled" />
+
+</RelativeLayout>

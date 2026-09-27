@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlueAngel"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hci_isvs.DodavanjeLijekovaActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/btnDodajLijekFrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/btn_shape_selector"
+        android:onClick="btnDodajLijekFrmonClick"
+        android:text="@string/btnDodajLijekFrm" />
+
+    <EditText
+        android:id="@+id/txtNazivLijeka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVrstaLijeka1"
+        android:layout_alignLeft="@+id/txtRokTrajanja"
+        android:layout_alignRight="@+id/txtVrstaLijeka1"
+        android:layout_marginBottom="18dp"
+        android:background="@color/Water"
+        android:ems="10"
+        android:hint="@string/txtNazivLijeka"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtRokTrajanja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDodajLijekFrm"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Water"
+        android:ems="10"
+        android:hint="@string/txtRokTrajanjaLijeka"
+        android:inputType="date"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtVrstaLijeka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtRokTrajanja"
+        android:layout_alignLeft="@+id/txtRokTrajanja"
+        android:layout_alignRight="@+id/txtRokTrajanja"
+        android:layout_marginBottom="18dp"
+        android:background="@color/Water"
+        android:ems="10"
+        android:hint="@string/txtVrstaLijeka"
+        android:padding="7dp" />
+
+</RelativeLayout>

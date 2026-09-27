@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BlueAngel"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hci_isvs.MojProfilActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/txtDobrodoslica2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/txtImeProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDobrodoslica2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtDobrodoslica2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="7dp"
+        android:background="@color/Water"
+        android:hint="@string/txtImeProfil" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPrezimeProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtImeProfil"
+        android:layout_alignRight="@+id/txtImeProfil"
+        android:layout_below="@+id/txtImeProfil"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="7dp"
+        android:background="@color/Water"
+        android:hint="@string/txtPrezimeProfil" />
+
+    <EditText
+        android:id="@+id/txtZvanjeProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPrezimeProfil"
+        android:layout_alignRight="@+id/txtPrezimeProfil"
+        android:layout_below="@+id/txtPrezimeProfil"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="7dp"
+        android:background="@color/Water"
+        android:hint="@string/txtZvanjeProfil" />
+
+    <EditText
+        android:id="@+id/txtPasswordProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOdjelProfil"
+        android:layout_alignRight="@+id/txtOdjelProfil"
+        android:layout_below="@+id/txtOdjelProfil"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="7dp"
+        android:background="@color/Water"
+        android:hint="@string/txtPasswordProfil"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtPasswordProfilConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPasswordProfil"
+        android:layout_alignRight="@+id/txtPasswordProfil"
+        android:layout_below="@+id/txtPasswordProfil"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="7dp"
+        android:background="@color/Water"
+        android:hint="@string/txtPasswordProfilConfirm"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLijekovi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPasswordProfilConfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtPasswordProfilConfirm"
+        android:text="@string/btnIzmijeniProfil"
+        android:background="@drawable/btn_shape_selector"
+        android:onClick="btnSpasiIzmjeneKorisnik" />
+
+    <EditText
+        android:id="@+id/txtOdjelProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtZvanjeProfil"
+        android:layout_alignRight="@+id/txtZvanjeProfil"
+        android:layout_below="@+id/txtZvanjeProfil"
+        android:layout_marginTop="10dp"
+        android:background="@color/Water"
+        android:ems="10"
+        android:hint="@string/txtOdjelProfil"
+        android:padding="7dp" />
+
+</RelativeLayout>

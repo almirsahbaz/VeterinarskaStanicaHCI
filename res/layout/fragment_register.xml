@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="end"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/BlueAngel"
+    tools:context="com.example.hci_isvs.RegisterActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/txtZvanje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPrezime"
+        android:layout_below="@+id/txtPrezime"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtZvanje"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtOdjel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtZvanje"
+        android:layout_below="@+id/txtZvanje"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtOdjel"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtAdresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOdjel"
+        android:layout_below="@+id/txtOdjel"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtAdresa"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAdresa"
+        android:layout_below="@+id/txtAdresa"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtTelefon"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtVrstaPosla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTelefon"
+        android:layout_below="@+id/txtTelefon"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtVrstaPosla"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtUsernameReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVrstaPosla"
+        android:layout_below="@+id/txtVrstaPosla"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtUsernameReg" 
+        android:background="@color/Water"
+        android:padding="7dp"/>
+
+    <EditText
+        android:id="@+id/txtPassReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtUsernameReg"
+        android:layout_below="@+id/txtUsernameReg"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtPasswordReg"
+        android:inputType="textPassword"
+        android:background="@color/Water" 
+        android:padding="7dp" />
+
+    <Button
+        android:id="@+id/btnMojProfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassReg"
+        android:layout_alignParentBottom="true"
+        android:onClick="btnRegistracijaOnClick"
+        android:text="@string/btnRegisterReg"
+        android:background="@drawable/btn_shape_selector" />
+
+    <EditText
+        android:id="@+id/txtIme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/txtIme"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+    <EditText
+        android:id="@+id/txtPrezime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtIme"
+        android:layout_below="@+id/txtIme"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/txtPrezime"
+        android:background="@color/Water"
+        android:padding="7dp" />
+
+</RelativeLayout>
